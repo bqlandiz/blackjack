@@ -21,7 +21,7 @@ const gameScreen = document.getElementById('game');
 let gameStarted = false;
 let gameLock = false;
 
-let playerMoney = 500;
+let playerMoney;
 let spanPlayerMoney = document.getElementById('spanPlayerMoney');
 updateUI(spanPlayerMoney, `Balance: $${loadMoney()}`);
 
@@ -131,7 +131,7 @@ function startGame() {
 window.onload = loadMoney();
 
 function loadMoney() {
-    savedMoney = localStorage.getItem('money');
+    let savedMoney = localStorage.getItem('money');
     if (savedMoney === null) {
         localStorage.setItem('money', 500);
         return 500;
