@@ -118,7 +118,7 @@ function startGame() {
                     gameScreen.appendChild(hitButton);
                     gameScreen.appendChild(standButton);
                 } else {
-                    alert('You are already in a game!');
+                    gameScreen.appendChild(showGUI("ERROR!", "You are already in a game."));
                 }
         } else {
            gameScreen.appendChild(showGUI("ERROR!", "You need to enter a bet amount."));
