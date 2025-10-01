@@ -131,7 +131,12 @@ function startGame() {
 window.onload = loadMoney();
 
 function loadMoney() {
-    playerMoney = Number(localStorage.getItem('money'));
+    savedMoney = localStorage.getItem('money');
+    if (savedMoney === null) {
+        localStorage.setItem('money', 500);
+        return 500;
+    }
+    playerMoney = Number(savedMoney);
     return playerMoney;
 }
 
