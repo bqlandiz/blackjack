@@ -1,0 +1,118 @@
+body {
+    font-family: "Lexend", sans-serif;
+    background-color: #f5f5dc;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.money {
+    font-size: 18px;
+    i {
+        color: green;
+    }
+}
+
+label {
+    margin-top: 50px;
+}
+
+.inputGameMoney {
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    &::placeholder {
+        text-align: center;
+        font-family: "Lexend", sans-serif;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn_Hit {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    width: 250px;
+    height: 35px;
+    background-color: #8faf00;
+    color: white;
+    font-size: 18px;
+}
+
+.btn_Stand {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    width: 250px;
+    height: 35px;
+    background-color: rgb(133, 38, 0);
+    color: white;
+    font-size: 18px;
+}
+
+.btn_PlayAgain {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    width: 250px;
+    height: 35px;
+    background-color: #7a7a7a;
+    color: white;
+    font-size: 18px;
+}
+
+.play {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    height: 50px;
+}
+
+#buttonStartGame {
+    border: 1px solid black;
+    border-left: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 50px;
+    height: 54px;
+    background-color: #406969;
+    color: white;
+    font-size: 18px;
+}
+
+#GUI_div {
+   position: fixed;
+   transform: translate(-100%);
+   background: #222;
+   color: white;
+   padding: 2rem;
+   border-radius: 1rem;
+   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+   text-align: center;
+   z-index: 100;
+}
+
+.game {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
